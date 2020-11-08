@@ -1,0 +1,6 @@
+wheel
+notebook
+jupyterlab
+jupyter_nbextensions_configurator
+pandas
+numpy
