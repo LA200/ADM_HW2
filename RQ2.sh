@@ -22,7 +22,7 @@ do
     echo "category,n_purchases" > $aggregated_n_purchases_per_category_file_path
     for purchases_category in $all_purchases_categories
     do
-        echo $purchases_category
+        # echo $purchases_category
         echo -n $purchases_category >> $aggregated_n_purchases_per_category_file_path
         echo -n ','  >> $aggregated_n_purchases_per_category_file_path
         cat $sub_dataset_with_purchases_file_path | grep "^$purchases_category$" | wc -l  >> $aggregated_n_purchases_per_category_file_path
